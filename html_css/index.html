@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Shop</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Codify</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="media/stars.png"  id="stars">
+        <img src="media/moon.png" id="moon">
+        <img src="media/mountains_behind.png" id="behing">
+        <h2 id="text">Moon Light</h2>
+        <a href="#" id="btn">exploren</a>
+        <img src="media/mountains_front.png" id="front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Scrolling Effects</h2>
+    </p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aut excepturi pariatur iste, nesciunt assumenda adipisci quas libero sit sint dolore voluptate illum harum aperiam nobis hic! Nihil, explicabo fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquid commodi corrupti autem quas porro inventore accusantium vel quisquam sed sit, ad tempora delectus eum repudiandae dolorum et officia nisi.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus a laborum consequuntur recusandae vel ullam corporis velit sed quo officia, accusantium, cumque aut rerum reiciendis iusto modi ab! Quas.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur odio reiciendis, nam obcaecati nulla unde nemo officiis molestiae accusamus architecto delectus. Iusto recusandae quis sunt aspernatur maiores ut at.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aut excepturi pariatur iste, nesciunt assumenda adipisci quas libero sit sint dolore voluptate illum harum aperiam nobis hic! Nihil, explicabo fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquid commodi corrupti autem quas porro inventore accusantium vel quisquam sed sit, ad tempora delectus eum repudiandae dolorum et officia nisi.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus a laborum consequuntur recusandae vel ullam corporis velit sed quo officia, accusantium, cumque aut rerum reiciendis iusto modi ab! Quas.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur odio reiciendis, nam obcaecati nulla unde nemo officiis molestiae accusamus architecto delectus. Iusto recusandae quis sunt aspernatur maiores ut at.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aut excepturi pariatur iste, nesciunt assumenda adipisci quas libero sit sint dolore voluptate illum harum aperiam nobis hic! Nihil, explicabo fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquid commodi corrupti autem quas porro inventore accusantium vel quisquam sed sit, ad tempora delectus eum repudiandae dolorum et officia nisi.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus a laborum consequuntur recusandae vel ullam corporis velit sed quo officia, accusantium, cumque aut rerum reiciendis iusto modi ab! Quas.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur odio reiciendis, nam obcaecati nulla unde nemo officiis molestiae accusamus architecto delectus. Iusto recusandae quis sunt aspernatur maiores ut at.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aut excepturi pariatur iste, nesciunt assumenda adipisci quas libero sit sint dolore voluptate illum harum aperiam nobis hic! Nihil, explicabo fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquid commodi corrupti autem quas porro inventore accusantium vel quisquam sed sit, ad tempora delectus eum repudiandae dolorum et officia nisi.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus a laborum consequuntur recusandae vel ullam corporis velit sed quo officia, accusantium, cumque aut rerum reiciendis iusto modi ab! Quas.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur odio reiciendis, nam obcaecati nulla unde nemo officiis molestiae accusamus architecto delectus. Iusto recusandae quis sunt aspernatur maiores ut at.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aut excepturi pariatur iste, nesciunt assumenda adipisci quas libero sit sint dolore voluptate illum harum aperiam nobis hic! Nihil, explicabo fuga?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis aliquid commodi corrupti autem quas porro inventore accusantium vel quisquam sed sit, ad tempora delectus eum repudiandae dolorum et officia nisi.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis accusamus a laborum consequuntur recusandae vel ullam corporis velit sed quo officia, accusantium, cumque aut rerum reiciendis iusto modi ab! Quas.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur odio reiciendis, nam obcaecati nulla unde nemo officiis molestiae accusamus architecto delectus. Iusto recusandae quis sunt aspernatur maiores ut at.</p>
+    
+
+
+
+
+</div>
+<script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let behing = document.getElementById('behing')
+    let front = document.getElementById('front')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let header = document.getElementById('header')
+
+    window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px'
+            moon.style.top = value * 1.05 + 'px'
+            mount_behind.style.top = value * 0.2 + 'px'
+            mount_front.style.top = value * 0.3 + 'px'
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            btn.style.marginTop = value * 1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+        })
+</script>
+</body>
+</html>
